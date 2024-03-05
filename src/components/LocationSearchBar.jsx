@@ -2,8 +2,15 @@ import React, { useState } from 'react';
 import './components.css'; // Importing CSS file
 
 
-const SearchBar = ({ onSearch }) => {
+const SearchBar = () => {
   const [query, setQuery] = useState('');
+
+  const handleSearch = (query) => {
+    // Perform search logic here
+    // For example, fetch data from an API based on the query
+    console.log('Searching for:', query);
+    // Update searchResults state with the results
+  };
 
   const handleChange = (event) => {
     setQuery(event.target.value);
@@ -11,7 +18,7 @@ const SearchBar = ({ onSearch }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSearch(query);
+    handleSearch(query);
   };
 
   return (

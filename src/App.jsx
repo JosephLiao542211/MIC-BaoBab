@@ -10,13 +10,6 @@ function App() {
   const [count, setCount] = useState(0)
   const [searchResults, setSearchResults] = useState([]);
 
-  const handleSearch = (query) => {
-    // Perform search logic here
-    // For example, fetch data from an API based on the query
-    console.log('Searching for:', query);
-    // Update searchResults state with the results
-  };
-
   return (
     <>
       <div>
