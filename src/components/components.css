@@ -1,0 +1,101 @@
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between; /* Aligning items with space between */
+    align-items: center; /* Aligning items vertically */
+  }
+  
+  .navbar-left {
+    flex: 1; /* Takes as much space as available */
+  }
+  
+  .navbar-center {
+    flex: 2; /* Takes twice as much space as navbar-left or navbar-right */
+  }
+  
+  .navbar-right {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end;/* Takes as much space as available */
+   
+
+ /* Aligning profile picture to the right */
+  }
+  
+  .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 20px; /* Adding some padding to the left of the logo */
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .profile-picture {
+    width: 40px;
+    height: 40px;
+    background-color: #fff; /* Placeholder color */
+    border-radius: 50%; /* Making it circular */
+    margin-right: 20px; /* Adding some margin to the right of the profile picture */
+  }
+
+
+  .searchcontainer{
+    /* align-items: center; */
+    /* width: 60vw; */
+    position: absolute;
+    
+    z-index: 100;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+   
+    margin-top: 1%;
+    
+    width: 50%;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: #fff;
+  }
+
+  .search{
+    display: flex;
+    ;
+  }
+
+  .searchbar{
+    flex: 1;
+    border-radius: 1em ;
+    padding-left: 0.8em ;
+   
+    /* align-self: flex; */
+  }
+  .enterbtn{
+    margin-left: 2%;
+  }
+  
+  .toolbar-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+  }
